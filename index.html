@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+</head>
+<body>
+    <h1>Formulaire de candidature</h1> 
+    <em>Les champs * sont obligatoires</em><br>
+    <form action="" method="post" enctype="multipart/form-data" autocomplete ="off">
+
+<label for="firstname">Prénom * :</label>
+<input type="text" name="firstname" id="firstname" required>
+<br><br><label for="lastname">Nom * :</label>
+<input type="text" name="lastname" id="lastname" required>
+<br><br><label for="tel">Numéro de téléphone :</label>
+<input type="tel" name="tel" id="tel">
+<br><br><label for="email">Email * :</label>
+<input type="email" name="email" id="email" required>
+
+<br><br><span>Pour quel poste postulez-vous * ?</span>
+<label for="cto">CTO</label>
+<input type="radio" name="poste" id="cto" required>
+<label for="responsable marketig">Responsable Marketig</label>
+<input type="radio" name="poste" id="responsable marketig">
+<label for="developpeur">Développeur</label>
+<input type="radio" name="poste" id="developpeur">
+
+<br><br><label for="niveau">Quel est votre niveau d'étude ? * : </label>
+<select name="niveau" required id="niveau">
+    <option value="">--Choisir un niveau--</option>
+    <option value="1" >Bac+3</option>
+    <option value="2">Bac+5</option>
+    <option value="3">Bac+8</option>
+</select>
+
+<br><br>
+<div>Comment avez-vous entendu parlé de notre entreprise ?</div>
+<label for="linkedin">LinkedIn</label>
+<input type="checkbox" name="façon" id="linkedin">
+<label for="bouche a oreille">Bouche à oreille</label>
+<input type="checkbox" name="façon" id="bouche a oreille">
+<label for="radio">A la radio</label>
+<input type="checkbox" name="façon" id="radio">
+
+<br><br><label for="file">Votre CV *</label>
+<input type="file" name="file" required id="file">
+<br>
+<div>Un commentaire ?</div>
+<textarea name="textarea"
+   rows="10" cols="40" minlength="0" maxlength="400"placeholder="Maximum 400 caractères"></textarea>
+
+<br>
+<input type="submit" value="Soumettre ma candidature">
+<button type="submit">Soumettre ma candidature</button>
+</form>
+</body>
+</html>
